@@ -1,0 +1,34 @@
+docker build -t samplesite .
+docker run -p 3000:3000 samplesite
+
+docker ps
+
+
+lsof -i :3000
+kill -9 <PID>
+
+
+powershell/cmd:
+netstat -ano | findstr :3000
+taskkill /PID 9780   /F
+
+
+
+docker kill $(docker ps -q)
+
+
+
+
+running from localhost directly :
+https://nodejs.org
+node -v
+npm -v
+
+
+clone :
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+npm install
+npm start
+http://localhost:3000
